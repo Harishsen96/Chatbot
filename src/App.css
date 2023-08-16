@@ -1,38 +1,66 @@
-.App {
+.library_card2 {
+  height: 50px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   text-align: center;
+  color: #fff;
+  /* background-color: rgb(223,28,76) ; */
+  background: linear-gradient(45deg,#dd1c4c 0%,#ad1ce9 100%);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.chatbot-container {
+  width: 100%;
+  margin: auto;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.chatbot-header {
+  background: linear-gradient(45deg,#dd1c4c 0%,#ad1ce9 100%);
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.chatbot-messages {
+  height: 350px;
+  overflow-y: auto;
+  padding: 10px;
+}
+
+.message {
+  margin: 5px 0;
+  padding: 8px;
+  border-radius: 5px;
+  background-color: #f0f0f0;
+}
+
+.chatbot-input {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+  padding: 8px;
+  border-top: 1px solid #ccc;
 }
 
-.App-link {
-  color: #61dafb;
+input[type='text'] {
+  flex-grow: 1;
+  padding: 8px;
+  border: 1px solid #dcdcdc;
+  border-radius: 5px;
+  margin-right: 8px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button {
+  background: linear-gradient(45deg,#dd1c4c 0%,#ad1ce9 100%);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 16px;
+  cursor: pointer;
 }
+.chatclass{
+  display: flex;
+}
+
